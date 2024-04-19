@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel = "stylesheet" href = "stylesheet.css">
+        <script src = "script.js"></script>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe Harbor - FAQ</title>
+    </head>
+
+    <body>
+        <div id = "nav-bar" class = "w3-top w3-bar">
+            <nav class = "w3-top w3-bar w3-teal">
+                <div id = "nav-content" class = "w3-bar-item">
+                    <img src = "img/HeaderImage.png" alt = "Recipe Harbor Logo and Name">
+                </div>
+    
+                <div id = "nav-links">
+                    <a href = "Home.html" class = "w3-bar-item w3-button w3-hide-small w3-hover-pale-green">Home</a>
+                    <a href = "Features.html" class = "w3-bar-item w3-button w3-hide-small w3-hover-pale-green">Features</a>
+                    <a href = "Contact.html" class = "w3-bar-item w3-button w3-hide-small w3-hover-pale-green">Contact</a>
+                    <a href = "Download.html" class = "w3-bar-item w3-button w3-hide-small w3-hover-pale-green">Get The App!</a>
+
+                    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium w3-hover-pale-green" onclick="mobileMenu()">&#9776;</a>
+                </div>
+
+                <div id = "nav-links-mobile" class = "w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium">
+                    <a href = "Home.html" class = "w3-bar-item w3-button w3-hover-pale-green">Home</a>
+                    <a href = "Features.html" class = "w3-bar-item w3-button w3-hover-pale-green">Features</a>
+                    <a href = "Contact.html" class = "w3-bar-item w3-button w3-hover-pale-green">Contact</a>
+                    <a href = "Download.html" class = "w3-bar-item w3-button w3-hover-pale-green">Get The App!</a>
+                </div>
+            </nav>
+        </div>
+        
+        <div id = "about-main" class = "w3-container w3-pale-green">
+            <div id = "about-philosophy" class = "f-left">
+                <h4>Our Philosophy</h4>
+                <h3>Our food shouldnt be so hard</h3>
+                <p>We are shoppers too, so we created an app that we wanted for ourselves and to make your own cooking experience simple.
+                </p>
+            </div>
+
+            <div id = "philosophy-img" class = "f-right">
+                <img id = "philosophy" src = "img/philosophy.png" alt = "Image with text that says our food shouldnt be so hard">
+            </div>
+        </div>
+
+        <div id = "app-questions" class = "w3-container">
+            <h3>Q & A</h3>
+            <p>This section will contain collapsible content for 5-7 common questions that are asked about most apps.</p>
+            
+            <button id = "accordians" onclick="Accordian('Q1')" class="w3-button w3-block w3-left-align w3-teal">How do I get tech support?</button>
+            <div id="Q1" class="w3-container w3-hide">
+                <p>We currently only offer technical support through email. <br> Please visit the <a href = "Contact.html" target = "_blank">Contact Us</a> page for 
+                further information. Chat and text messaging support is coming soon.</p>
+            </div>
+            
+            <button id = "accordians" onclick="Accordian('Q2')" class="w3-button w3-block w3-left-align w3-pale-green">What platforms is Recipe Harbor available for?</button>
+            <div id= "Q2" class="w3-container w3-hide">
+                <p>Recipe Harbor is available for download on the Apple Store and the Google Play Store. <br> We are currently working on the Windows phone app. </p>
+            </div>
+
+            <button id = "accordians" onclick="Accordian('Q3')" class="w3-button w3-block w3-left-align w3-teal">Is Recipe Harbor free?</button>
+            <div id="Q3" class="w3-container w3-hide">
+                <p>We currently offer a Pro and a Lite version. <br> All versions can create custom cookbooks with custom recipes and use custom grocery lists. <br>
+                The upcoming features like Pantry View, Cookbook Scanner, etc. will only be available in the Pro plan which is available in a monthly or annual 
+                subscription. The monthly plan is $3.99 a month, and the annual plan is $49.99 a year.</p>
+            </div>
+
+            <button id = "accordians" onclick="Accordian('Q4')" class="w3-button w3-block w3-left-align w3-pale-green">Can I share recipes with friends?</button>
+            <div id="Q4" class="w3-container w3-hide">
+                <p>Yes! Our app features a share button on the individual recipe card available in your cookbook. <br> You can share via text, email or social media 
+                messaging.</p>
+            </div>
+
+            <button id = "accordians" onclick="Accordian('Q5')" class="w3-button w3-block w3-left-align w3-teal">What if I don't like the app?</button>
+            <div id="Q5" class="w3-container w3-hide">
+                <p>We would definitely miss you. If you come to find out Recipe Harbor is not what you were needing, we understand. Not everyone shops and cooks the 
+                    same way. <br> If you are on the free plan, you can just simply remove the app from your phone. If you are on the Pro plan and are unhappy with your 
+                    purchase, please cancel as soon as possible. We will refund your prorated, unused portion of your subscription fee. <br> Please review our terms and 
+                    conditions page on the app to read more information about our cancellation policy. </p>
+            </div>
+        </div>
+
+        <div id = "about-developer" class = "w3-container w3-pale-green">
+            <div id = "about" class = "f-left">
+                <h3>About the Developer</h3>
+                <p>ANG Development is woman-owned and operated by Adrienne Pallett. Adrienne became a software developer after noticing the lack of user-centric
+                design in many of our most common applications. She has made it her mission to fix that oversight with a series of user-centric design apps that we
+                use every day. 
+                </p>
+            </div>
+
+            <div id = "dev-photo" class = "f-right">
+                <img id = "headshot" src = "img/IMG_1892.JPG" alt = "Photo of Adrienne Pallett">
+            </div>
+        </div>
+
+        <div id = "footer" class = "w3-container w3-teal">
+            <div id = "page-links" class = "f-left">
+                <h3>Page Links</h3>
+                <p><a href = "Features.html" class = "w3-bar-item w3-button w3-hover-pale-green">Features</a></p>
+                <p><a href = "FAQ.html" class = "w3-bar-item w3-button w3-hover-pale-green">FAQ</a></p>
+                <p><a href = "Contact.html" class = "w3-bar-item w3-button w3-hover-pale-green">Contact</a></p>
+                <p><a href = "Download.html" class = "w3-bar-item w3-button w3-hover-pale-green">Download</a></p>
+            </div>
+
+            <div id = "developer" class = "f-right">
+                <img id = "footer-img" src = "img/HeaderImage.png" alt = "Recipe Harbor logo and name">
+                <p>PO Box 123</p>
+                <p>Plantation, FL 33317</p>
+                <p>Toll Free: (800) 234-5678</p>
+                <a href = "https://www.adriennepallett.com" class = "w3-button w3-pale-green w3-round w3-hover-White">Developer's Website</a>
+            </div>
+        </div>
+    </body>
+</html>
