@@ -1,0 +1,36 @@
+Welcome to the RECIPE HARBOR WEBSITE README
+This project was created as a part of a Interactive Web Developement course at Nova Southeastern University.
+***************************************************************************************************************
+The requirements from the professor:
+
+Over the course of the semester, you will work on two main sites: one built in HTML, and one using Wordpress. 
+The following assignment details the HTML Site assignment.
+
+Most web sites are built on the foundation of HTML (hypertext markup language), with additional functionality being 
+added through things like CSS (cascading style sheets), Javascript,  and third-party applications via APIs 
+(application programming interfaces). To ensure that users can find sites via search engines, and access site content, 
+sites must be organized and make use of standard conventions, but it is often not enough to simply present content in 
+a modular way. Users expect sites to be attractive and media rich as well. 
+To demonstrate your ability to design a professional web site, you will compose a real or spoof site 
+that can be one of the following:
+
+A professional non-profit organization site
+A professional commercial site
+Your site should include the following features:
+
+Well-formed HTML
+Responsive web design
+A CSS-styled menu
+Functionality based on Javascript
+Functionality from a third-party API
+Rich media and interactivity
+You can code the various files from scratch, work from a template, and/or work within a framework such as W3.css, FlexBox, 
+or Bootstrap. You are allowed to work from templates, but the template used should be disclosed as a comment in your 
+HTML head, and substantial changes should be made to it that showcase your ability to develop beyond the template.
+
+Your site files will be hosted in a folder on http://www.scmaker.site Links to an external site. and perhaps also on GitHub. 
+Instructions for uploading files to our course server will be made available.
+***************************************************************************************************************
+This project should be downloaded in its entirety to run properly. 
+
+STABLE RELEASE
