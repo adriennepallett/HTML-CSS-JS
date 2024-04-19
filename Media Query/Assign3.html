@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 3</title>
+		
+		<style type = "text/css">
+			
+			/* Media Queries */
+			@media handheld and (max-width: 1024px), 
+				screen and (max-device-width: 1024px),
+				screen and (max-width: 1024px)
+			{
+				h1 {
+					padding-left: 90px;
+					color: darkorchid;
+					font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+				}
+				
+				div {
+					-webkit-column-count: 1;
+					column-count: 1;
+				}
+				
+				/* Dropdown Menu */
+				.dropdown {
+					width: 480px;
+					height: 640px;
+					psotion: relative;
+					text-align: center;
+					font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+				}
+
+				.dropdown a {
+					width: 480px;
+					background-color: honeydew;
+					color: cadetblue;
+					display: block;
+					text-decoration: none;
+				}
+
+				.dropdown a:hover {
+					background-color: cadetblue;
+					color: honeydew;
+					display: block;
+					text-decoration: underline;
+				}
+
+				.dropdown a:active {
+					background-color: aquamarine;
+					color: black;
+					display: block;
+					text-decoration: overline;
+				}
+
+				.vertical {
+					width: 480px;
+					position: relative;
+					display: inline-block;
+				}
+				.vertical-content {
+					display: none;
+					position: center;
+					z-index: 1;
+				}
+				.vertical:active .vertical-content {
+					display: block;
+				}
+			}
+			
+			@media only screen and (min-width: 1025px)
+			{
+				h1 {
+					text-align: center;
+					color: red;
+					font-family: "Chalkboard"
+				}
+				
+				div {
+					width: 250px;
+					height: 640px;
+					text-align: center;
+					column-width: 200px;
+					column-height: 400px;
+					color: #5C1EE1;
+					font-family: "Chalkboard";
+				}
+				
+				img {
+					width: 200px;
+					padding-bottom: 5px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Places I want to visit</h1>
+		
+		<div class = "dropdown">
+			<div class = "vertical">
+				<a>Germany</a>
+				<div class = "vertical-content">
+					<img src = "Germany Castle 1.jpeg" alt = "German Castle 1" width = "50%">
+						<!-- https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=disney+castle+germany&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=disney+castle+germany&get_facets=0&asset_id=183532893 -->
+					
+					<img src = "Germany Town 1.jpeg" alt = "German Town 1" width = "50%">
+						<!-- https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=germany&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=germany&get_facets=0&asset_id=94682947 -->
+				</div>
+			</div>
+		
+			<div class = "vertical">
+				<a>London</a>
+				<div class = "vertical-content">
+					<img src = "England 1.jpeg" alt = "Big Ben" width = "40%">
+						<!--https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=england&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=england&get_facets=0&asset_id=43306641-->
+				</div>
+			</div>
+			
+			<div class = "vertical">
+				<a>Norway</a>
+				<div class = "vertical-content">
+					<img src = "Norway 1.jpeg" alt = "Norway 1" width = "80%">
+						<!--https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=norway&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=norway&get_facets=0&asset_id=104876466-->
+					
+					<img src = "Norway 2.jpeg" alt = "Norway 2" width = "80%">
+						<!--https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=norway&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=norway&get_facets=0&asset_id=190816719-->
+				</div>
+			</div>
+			
+			<div class = "vertical">
+				<a>Alaska</a>
+				<div class = "vertical-content">
+					<img src = "Alaska 2.jpeg" alt = "Alaska 2" width = "70%">
+						<!--https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=alaska&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=alaska&get_facets=0&asset_id=130403935-->
+					
+					<img src = "Alaska 1.jpeg" alt = "Alaska 1" width = "60%">
+						<!--https://stock.adobe.com/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=alaska&order=relevance&safe_search=1&limit=100&search_type=usertyped&search_page=1&acp=&aco=alaska&get_facets=0&asset_id=194812119-->
+				</div>
+			</div>
+		</div>
+		
+		<h6>Adrienne Pallett - Web Programming F23 - Assignment 3</h6>
+	</body>
+</html>
