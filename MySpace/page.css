@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.page {
+	background-image: url("background.png");
+	background-size: 100% 100%;
+	background-position: top left, 200% center;
+	background-origin:border-box,content-box;
+	background-repeat:no-repeat,repeat;
+	z-index: 1;
+}
+
+.layer {
+	background-image: url("foreground.png");
+	background-size: 100% 100%;
+	background-position: top left, 100% center;
+	background-origin:border-box,content-box;
+	background-repeat:no-repeat,repeat;
+	z-index: 2;
+	
+	margin: 0% 5%;
+}
+
+.guts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 5%;
+}
+
+
+#row1 {
+	margin: 5%;
+}
+
+#row2 {
+	margin: 5%;
+	padding: 20% 0% 10%;
+}
+
+.section {
+	display: flex;
+	margin: 2%;
+}
+
+.section-content {
+	flex: 1;
+	margin: 3%;
+}
+
+#end {
+	color: white;
+	padding: 1%;
+}
+
+
+#profile_img {
+	width: 60%;
+	margin: 5% 20%;
+}
+
+#schedule {
+	margin-top: 5%;
+}
+
+#classes {
+	width: 100%;
+	text-align: center;
+}
+
+#theme {
+	margin: 5%;
+}
+
+
+#fave_sites {
+	padding: 10%;
+}
+
+#fave_foods {
+  	display: block;
+}
+
+.fave_food.span {
+	text-align: left;
+}
+
+.food_img {
+	display: none;
+	width: 70%;
+	margin: 5% 20% 0%;
+}
+
+.food_text:hover ~ .food_img {
+	display: block;
+}
+
+#fave_thing {
+	margin: 5%;
+	padding: 5%;
+}
+
+#hockey {
+	width: 60%;
+	margin: 5% 20%;
+}
