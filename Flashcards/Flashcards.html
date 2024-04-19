@@ -162,23 +162,23 @@
 					
 			
 			
-			function nextQuestion(){
-                guessed = false;
-                for(let i = 1; i <= 4; i++){
-                    document.getElementById("button"+i).style.backgroundColor = "lightgrey";
-                }
+			function checkAnswer(id) {
+				if (guessed == false) {
+					var check = document.getElementById(id).value;
+					var correctNum = document.getElementById("numberCorrect");
 
-                document.getElementById("flashcard_img").src = pictures[order[counter]];
-                document.getElementById("flashcard_img").alt = answers[order[counter]];
+					if (check == answers[order[counter-1]]) {
+						window.alert("Correct!");
+						correct ++;
+						correctNum.innerHTML = correct;	
+					}
 
-                setButtons();
-
-                if(counter == 4){
-                    counter = 0;
-                } else{
-                    counter++;
-                }
-            }
+					else
+						window.alert("Nope!");
+					
+					guessed = true;
+				}
+			}
 			
 			function endGame() {
 				window.alert("Good Job! You got a " + correct + " out of 20!");
