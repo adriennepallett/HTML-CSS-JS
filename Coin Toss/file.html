@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment 5</title>
+	<style>
+		body {
+			background-image: url("img/felt.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+		
+		h1 {
+			font-family: "Arial Black", "sans-serif";
+			margin: 50px 300px;
+		}
+		
+		li {
+			display: inline;
+			margin-right: 10px;
+		}
+		
+		#tossButton {
+			width: 100px;
+			height: 75px;
+			border-radius: 10px;
+			background-color: yellow;
+			margin: 50px 400px;
+			font-family: 'Arial Black', 'sans-serif';
+		}
+		
+		table {
+			
+		}
+		
+		
+	</style>
+	
+	<script>
+		
+		var freq1 = 0;
+		var freq2 = 0;
+		var totalCoins = 0;
+		
+		function start() {
+			var button = document.getElementById("tossButton");
+			button.addEventListener("click", flipCoin, false);
+		}
+		
+		function flipCoin() {
+			var coinValue;
+			
+			for (var i = 1; i <= 10; i++) {
+				coinValue = Math.floor( 1 + Math.random() * 2);
+
+				tallyFlips(coinValue);
+				setImage(i, coinValue);
+				++ totalCoins;
+			}
+			
+			updateTable();
+		}
+
+		function setImage (coinNum, coinValue) {
+			var coinImg = document.getElementById("coin" + coinNum);
+			coinImg.setAttribute("src", "img/coin" + coinValue + ".png");
+			coinImg.setAttribute("alt", "coin with " + coinValue + " value(s)");
+		}
+		
+		function tallyFlips(coinValue) {
+			switch (coinValue) {
+				case 1: 
+					++ freq1;
+					break;
+				case 2: 
+					++ freq2;
+					break;
+			}
+		}
+		
+		function updateTable() {
+			var tableDiv = document.getElementById("FreqTable");
+			
+			tableDiv.innerHTML = "<table>" + 
+				"<caption>Frequencies</caption>" +
+				"<thead><th>Coin Orientation</th>" + 
+					"<th>Frequency</th>" +
+					"<th>Percent</th></thead>" +
+
+				"<tbody><tr><td>1</td><td>"+freq1 +"</td><td>" +  
+					formatPercent(freq1/totalCoins) + "</td></tr>" + 
+				
+					"<tr><td>2</td><td>"+freq2 +"</td><td>" +  
+					formatPercent(freq2/totalCoins) + "</td></tr>" +	
+				
+				"</tbody></table>"
+		}
+		
+		function formatPercent (value) {
+			value *= 100;
+			return value.toFixed(2);
+		}
+		
+		window.addEventListener("load", start, false);
+		
+	</script>
+</head>
+
+<body>
+	<h1>Coin Toss Game</h1>
+	
+	<ol>
+		<li><img id = "coin1" src ="img/coin1.png" alt = "heads"></li>
+		<li><img id = "coin2" src ="img/coin2.png" alt = "tails"></li>
+		<li><img id = "coin3" src ="img/coin1.png" alt = "heads"></li>
+		<li><img id = "coin4" src ="img/coin2.png" alt = "tails"></li>
+		<li><img id = "coin5" src ="img/coin1.png" alt = "heads"></li>
+	</ol>
+		
+	<br>
+	
+	<ol>
+		<li><img id = "coin6" src ="img/coin2.png" alt = "tails"></li>
+		<li><img id = "coin7" src ="img/coin1.png" alt = "heads"></li>
+		<li><img id = "coin8" src ="img/coin2.png" alt = "tails"></li>
+		<li><img id = "coin9" src ="img/coin1.png" alt = "heads"></li>
+		<li><img id = "coin10" src ="img/coin2.png" alt = "tails"></li>
+	</ol>
+	<!-- Images in class modules -->
+	
+	<form action ="#">
+		<input id = "tossButton" type = "button" value = "Toss Coins">
+	</form>
+	
+	<h3>Toss Percentage</h3>
+	<div id = "FreqTable"></div>
+	
+</body>
+</html>
