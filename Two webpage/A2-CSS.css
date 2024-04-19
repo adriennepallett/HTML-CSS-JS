@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {
+	padding-left: 250px;
+	font-family: Chalkboard;
+}
+
+table {
+	width: 840px;
+	height: 420px;
+	column-width: 210px;
+	column-height: 400px;
+}
+
+td {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th {
+	font-family: Chalkboard;
+	color:darkorchid;
+}
+
+img {
+	width: 205px;
+	padding-bottom: 5px;
+}
